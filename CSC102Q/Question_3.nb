@@ -1,0 +1,188 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5611,        180]
+NotebookOptionsPosition[      4995,        162]
+NotebookOutlinePosition[      5340,        177]
+CellTagsIndexPosition[      5297,        174]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Question 3: Mohamed Gas", "Subtitle",
+ CellChangeTimes->{{3.75920332842435*^9, 
+  3.7592033361579113`*^9}},ExpressionUUID->"eb5f665f-ffea-45f3-8dc1-\
+dab16e84a869"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Quotient", " ", "Rule"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Quotient", " ", "rule", " ", "is", " ", "a", " ", "method", " ", "iof", 
+    " ", "finding", " ", "the", " ", "derivative", "\[IndentingNewLine]", 
+    "of", " ", "a", " ", "funtion", " ", "that", " ", "is", " ", "a", " ", 
+    "ratio", " ", "of", " ", "two", " ", "differentiable", " ", 
+    RowBox[{"functions", "."}]}], " ", "*)"}]}]], "Subsubtitle",
+ CellChangeTimes->{{3.758747030764676*^9, 3.7587470661126785`*^9}, {
+  3.758747109063902*^9, 3.7587472200370245`*^9}, {3.7587478224881773`*^9, 
+  3.758747863008938*^9}, {3.758747952944111*^9, 3.758748033287775*^9}, {
+  3.7587481438076916`*^9, 3.7587481939690905`*^9}, {3.7592025145415363`*^9, 
+  3.759202516740362*^9}, {3.759203291925311*^9, 3.7592033067136307`*^9}, {
+  3.7602907100808296`*^9, 3.760290737018444*^9}},
+ FontFamily->"Calibri",
+ FontSize->14,ExpressionUUID->"3f7b9a3f-c4ea-423c-aa15-fa80574faf8b"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"f", "[", "x", "]"}], 
+  RowBox[{"g", "[", "x", "]"}]]], "Text",
+ CellChangeTimes->{3.7602927168672123`*^9},
+ FontFamily->"Calibri",
+ FontSize->14,
+ FontWeight->"Plain",ExpressionUUID->"3252bcd3-6e7b-45c2-9eb5-2e3a00ef80e1"],
+
+Cell[BoxData[{
+ RowBox[{
+  FractionBox["d", "dx"], "[", 
+  RowBox[{"f", 
+   RowBox[{"(", "x", ")"}], "*", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"g", 
+      RowBox[{"(", "x", ")"}]}], ")"}], 
+    RowBox[{"-", "1"}]]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  StyleBox[" ",
+   FontWeight->"Bold"], 
+  StyleBox[
+   RowBox[{
+   "prooving", " ", "using", " ", "product", " ", "rule", " ", "and", " ", 
+    "chain", " ", "rule", " "}],
+   FontWeight->"Bold"]}], "\[IndentingNewLine]", 
+ RowBox[{"=", " ", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"f", "'"}], 
+    RowBox[{"(", "x", ")"}], "*", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"g", 
+       RowBox[{"(", "x", ")"}]}], ")"}], 
+     RowBox[{"-", "1"}]]}], "+", 
+   RowBox[{"f", 
+    RowBox[{"(", "x", ")"}], 
+    RowBox[{"(", 
+     RowBox[{"-", "1"}], ")"}], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"g", 
+       RowBox[{"(", "x", ")"}]}], ")"}], 
+     RowBox[{"-", "1"}]], "*", 
+    RowBox[{"g", "'"}], 
+    RowBox[{"(", "x", ")"}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"=", 
+  RowBox[{
+   FractionBox[
+    RowBox[{
+     RowBox[{"f", "'"}], 
+     RowBox[{"(", "x", ")"}]}], 
+    RowBox[{"g", 
+     RowBox[{"(", "x", ")"}]}]], "-", 
+   FractionBox[
+    RowBox[{"f", 
+     RowBox[{"(", "x", ")"}], "*", 
+     RowBox[{"g", "'"}], 
+     RowBox[{"(", "x", ")"}]}], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"g", 
+       RowBox[{"(", "x", ")"}]}], ")"}], "2"]]}]}], "\[IndentingNewLine]", 
+ RowBox[{"=", " ", 
+  RowBox[{
+   FractionBox[
+    RowBox[{
+     RowBox[{"f", "'"}], 
+     RowBox[{"(", "x", ")"}], "*", "g", 
+     RowBox[{"(", "x", ")"}]}], 
+    RowBox[{"g", 
+     SuperscriptBox[
+      RowBox[{"(", "x", ")"}], "2"]}]], "-", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"f", 
+      RowBox[{"(", "x", ")"}], "*", 
+      RowBox[{"g", "'"}], 
+      RowBox[{"(", "x", ")"}]}], 
+     RowBox[{"g", 
+      SuperscriptBox[
+       RowBox[{"(", "x", ")"}], "2"]}]], 
+    StyleBox[
+     RowBox[{"  ", 
+      StyleBox[" ",
+       FontWeight->"Bold"]}]], 
+    StyleBox[
+     RowBox[{"Factoring", " ", "the", " ", "denominator", " "}],
+     FontWeight->"Bold"]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"=", 
+  FractionBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"f", "'"}], 
+     RowBox[{"(", "x", ")"}], "*", "g", 
+     RowBox[{"(", "x", ")"}]}], "-", 
+    RowBox[{"f", 
+     RowBox[{"(", "x", ")"}], "*", 
+     RowBox[{"g", "'"}], 
+     RowBox[{"(", "x", ")"}]}]}], 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"g", 
+      RowBox[{"(", "x", ")"}]}], ")"}], "2"]]}]}], "Text",
+ CellChangeTimes->{
+  3.759271888037058*^9, {3.759271921026801*^9, 3.759272178639021*^9}, {
+   3.7592722345486917`*^9, 3.7592723709274263`*^9}, {3.7592724061581726`*^9, 
+   3.7592724341205034`*^9}, {3.7602927168822618`*^9, 3.7602927351738696`*^9}},
+ FontFamily->"Calibri",
+ FontSize->14,
+ FontWeight->"Plain",ExpressionUUID->"1f6980aa-55a3-486e-a284-c9f69f165c31"]
+}, Open  ]]
+},
+WindowSize->{1046, 533},
+WindowMargins->{{103, Automatic}, {-23, Automatic}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 170, 3, 53, "Subtitle",ExpressionUUID->"eb5f665f-ffea-45f3-8dc1-dab16e84a869"],
+Cell[753, 27, 1025, 18, 72, "Subsubtitle",ExpressionUUID->"3f7b9a3f-c4ea-423c-aa15-fa80574faf8b"],
+Cell[1781, 47, 262, 7, 53, "Text",ExpressionUUID->"3252bcd3-6e7b-45c2-9eb5-2e3a00ef80e1"],
+Cell[2046, 56, 2933, 103, 228, "Text",ExpressionUUID->"1f6980aa-55a3-486e-a284-c9f69f165c31"]
+}, Open  ]]
+}
+]
+*)
+

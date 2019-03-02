@@ -1,0 +1,385 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12280,        377]
+NotebookOptionsPosition[     10357,        333]
+NotebookOutlinePosition[     10700,        348]
+CellTagsIndexPosition[     10657,        345]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Question 5 : Mohamed Gas", "Subtitle",
+ CellChangeTimes->{{3.759199171576234*^9, 3.7591991917398443`*^9}},
+ CellID->304022547,ExpressionUUID->"6ed74d35-e7b8-45f2-996f-798ba5f9a493"],
+
+Cell["V(t):= 156 Cos(120 \[Pi]*t)", "Text",
+ CellChangeTimes->{{3.759195744164915*^9, 3.759195778447038*^9}, {
+   3.7591959212988605`*^9, 3.759195931749618*^9}, {3.759200028821365*^9, 
+   3.759200031407236*^9}, 3.7602930812409596`*^9, {3.760362308369567*^9, 
+   3.7603623161943746`*^9}},
+ FontFamily->"Calibri",
+ FontSize->12,
+ FontWeight->"Plain",
+ CellID->921508723,ExpressionUUID->"42a170c7-0847-4e3e-8589-3e7df3e22bc9"],
+
+Cell["A", "Subitem",
+ CellChangeTimes->{3.7592000385161424`*^9},
+ FontFamily->"Calibri",
+ FontSize->12,
+ CellID->130563118,ExpressionUUID->"a4beea37-4d0d-4826-8ee4-8289be176b5d"],
+
+Cell[BoxData[{
+ RowBox[{
+  FractionBox["dv", "dt"], "=", 
+  RowBox[{"156", 
+   RowBox[{"(", 
+    RowBox[{
+     FractionBox["d", "dt"], 
+     RowBox[{"(", 
+      RowBox[{"Cos", 
+       RowBox[{"(", 
+        RowBox[{"120", "\[Pi]t"}], ")"}]}], ")"}]}], 
+    ")"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"=", 
+  RowBox[{"156", 
+   RowBox[{"(", 
+    RowBox[{
+     FractionBox["d", "dt"], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "120"}], "\[Pi]t"}], ")"}], "Sin", 
+     RowBox[{"(", 
+      RowBox[{"120", "\[Pi]t"}], ")"}]}], ")"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"=", 
+  RowBox[{
+   RowBox[{"-", "18720"}], 
+   RowBox[{"(", 
+    RowBox[{
+     FractionBox["d", "dt"], 
+     RowBox[{"(", "\[Pi]t", ")"}], " ", "Sin", 
+     RowBox[{"(", 
+      RowBox[{"120", "\[Pi]t"}], ")"}]}], ")"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"=", 
+  RowBox[{
+   RowBox[{"-", "18720"}], "\[Pi]", 
+   RowBox[{"(", 
+    RowBox[{
+     FractionBox["d", "dt"], 
+     RowBox[{"(", "t", ")"}], " ", "Sin", 
+     RowBox[{"(", 
+      RowBox[{"120", "\[Pi]t"}], ")"}]}], ")"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"=", 
+  RowBox[{
+   RowBox[{"-", "18720"}], "\[Pi]", 
+   RowBox[{"(", 
+    RowBox[{"Sin", 
+     RowBox[{"(", 
+      RowBox[{"120", "\[Pi]t"}], ")"}]}], ")"}]}]}]}], "Text",
+ CellChangeTimes->{{3.7593409938133993`*^9, 3.759341042539008*^9}, {
+   3.7593410917779727`*^9, 3.7593410947689137`*^9}, {3.7593411516683016`*^9, 
+   3.7593411873391275`*^9}, {3.7593412390446606`*^9, 3.759341392307948*^9}, 
+   3.7602930812509856`*^9},
+ FontFamily->"Calibri",
+ FontSize->12,
+ FontWeight->"Plain",
+ CellID->291279506,ExpressionUUID->"57fc99c9-400a-412a-bf60-3b60e49110f6"],
+
+Cell["B", "Item",
+ CellChangeTimes->{3.759200047505043*^9},
+ FontFamily->"Calibri",
+ FontSize->12,
+ CellID->10475937,ExpressionUUID->"6e81ed79-27ad-4ede-be0f-baa7eafd49aa"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", "b", " ", "*)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    FractionBox[
+     StyleBox["dV",
+      FontSize->14,
+      FontWeight->"Bold"], 
+     StyleBox["dt",
+      FontSize->14,
+      FontWeight->"Bold"]], 
+    StyleBox["=",
+     FontSize->14,
+     FontWeight->"Bold"], 
+    StyleBox["0",
+     FontSize->14,
+     FontWeight->"Bold"]}], 
+   StyleBox[" ",
+    FontSize->14,
+    FontWeight->"Bold"], 
+   StyleBox[",",
+    FontSize->14,
+    FontWeight->"Bold"], 
+   StyleBox[
+    RowBox[{
+     RowBox[{
+      RowBox[{"when", " ", "t"}], "=", 
+      RowBox[{
+       RowBox[{"0", " ", "since", " ", 
+        RowBox[{"Sin", "[", "0", "]"}]}], "=", "0"}]}], 
+     "\[IndentingNewLine]"}],
+    FontSize->14,
+    FontWeight->"Bold"]}]}]], "Text",
+ CellChangeTimes->{{3.759195935918703*^9, 3.7591959418374395`*^9}, {
+   3.7591959915466003`*^9, 3.759196070868492*^9}, {3.7591990756492047`*^9, 
+   3.759199079480395*^9}, 3.7591994141982837`*^9, {3.7602913906331973`*^9, 
+   3.760291435592719*^9}, 3.760293081259998*^9},
+ FontFamily->"Calibri",
+ FontSize->12,
+ FontWeight->"Plain",
+ CellID->962948640,ExpressionUUID->"588e35f8-0969-4e37-adb0-131a5dc12eb4"],
+
+Cell["C", "Item",
+ CellChangeTimes->{3.7592000569982767`*^9},
+ FontFamily->"Calibri",
+ FontSize->12,
+ CellID->20284225,ExpressionUUID->"95101857-a6c9-4217-a8f2-ec762efeda21"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.759196112441016*^9, 3.759196117285903*^9}, 
+   3.759199082343026*^9, {3.7602931447929096`*^9, 3.7602931491344557`*^9}},
+ FontFamily->"Calibri",
+ FontSize->12,
+ FontWeight->"Plain",
+ CellID->340097547,ExpressionUUID->"4f9b70da-adc3-4aaf-936c-38dab2d70dfe"],
+
+Cell[BoxData[{
+ RowBox[{
+  FractionBox["dv", "dt"], "=", "0"}], "\[IndentingNewLine]", 
+ RowBox[{
+  FractionBox[
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", "18720"}], "\[Pi]", 
+     RowBox[{"(", 
+      RowBox[{"Sin", 
+       RowBox[{"(", 
+        RowBox[{"120", "\[Pi]t"}], ")"}]}], ")"}]}], ")"}], 
+   RowBox[{
+    RowBox[{"-", "18720"}], "\[Pi]"}]], "=", 
+  FractionBox["0", 
+   RowBox[{
+    RowBox[{"-", "18720"}], "\[Pi]"}]]}], "\[IndentingNewLine]", 
+ RowBox[{"=", 
+  RowBox[{
+   RowBox[{"Sin", 
+    RowBox[{"(", 
+     RowBox[{"120", "\[Pi]t"}], ")"}]}], "=", "0"}]}], "\[IndentingNewLine]", 
+ RowBox[{"=", 
+  RowBox[{
+   RowBox[{"120", "\[Pi]t"}], "=", 
+   RowBox[{
+    SuperscriptBox["Sin", 
+     RowBox[{"-", "1"}]], 
+    RowBox[{"(", "0", ")"}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"=", "0"}], " ", ",", "\[Pi]", ",", 
+  RowBox[{
+   RowBox[{"2", "\[Pi]"}], "=", 
+   RowBox[{"120", "\[Pi]t"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"t", "=", 
+   FractionBox["0", 
+    RowBox[{"120", "\[Pi]"}]]}], ",", 
+  FractionBox["\[Pi]", 
+   RowBox[{"120", "\[Pi]"}]], ",", 
+  FractionBox[
+   RowBox[{"2", "\[Pi]"}], 
+   RowBox[{"120", "\[Pi]"}]]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"t", "=", "0"}], ",", 
+  FractionBox["1", "120"], ",", 
+  FractionBox["1", "60"]}]}], "Text",
+ CellChangeTimes->{{3.7593414435431814`*^9, 3.759341617681348*^9}, {
+   3.7593416897691193`*^9, 3.7593418062689447`*^9}, 3.760293081273041*^9},
+ FontFamily->"Calibri",
+ FontSize->12,
+ FontWeight->"Plain",
+ CellID->372225,ExpressionUUID->"b262179c-6d0c-4d76-bfa2-0463bcad8320"],
+
+Cell[TextData[{
+ StyleBox["when t=0 ",
+  FontWeight->"Bold"],
+ "\nV = 156 Cos[120 \[Pi]*t] \nV (0) = 156 Cos (120*\[Pi]*0)\n= 156"
+}], "Text",
+ CellChangeTimes->{{3.7591988213099923`*^9, 3.7591988380736017`*^9}, {
+   3.759198885887686*^9, 3.759198887003685*^9}, {3.7593418270011177`*^9, 
+   3.7593418699834237`*^9}, 3.7602930812830653`*^9, {3.760293128004277*^9, 
+   3.760293137253885*^9}},
+ FontFamily->"Calibri",
+ FontSize->12,
+ FontWeight->"Plain",
+ CellID->769773754,ExpressionUUID->"7b1090d5-39eb-4857-bdb5-81ea9aa20c93"],
+
+Cell[BoxData[{
+ RowBox[{
+  StyleBox[
+   RowBox[{
+    RowBox[{"when", 
+     StyleBox[
+      RowBox[{" ", " "}]], "t"}], "=", 
+    FractionBox["1", "120"]}],
+   FontSize->14,
+   FontWeight->"Bold"], 
+  StyleBox[
+   StyleBox[
+    RowBox[{" ", " "}]],
+   FontSize->14,
+   FontWeight->"Bold"]}], "\[IndentingNewLine]", 
+ RowBox[{"V", "=", 
+  RowBox[{"156", 
+   RowBox[{"Cos", "[", 
+    RowBox[{"120", "\[Pi]", "*", "t"}], "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"V", 
+   RowBox[{"(", 
+    FractionBox["1", "120"], ")"}]}], "=", 
+  RowBox[{"156", "Cos", 
+   RowBox[{"(", 
+    RowBox[{"120", "*", "\[Pi]", "*", 
+     FractionBox["1", "120"]}], ")"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"=", 
+   RowBox[{"156", "Cos", 
+    RowBox[{"(", "\[Pi]", ")"}]}]}], " "}], "\[IndentingNewLine]", 
+ RowBox[{"=", 
+  RowBox[{"-", "156"}]}]}], "Text",
+ CellChangeTimes->{{3.759198890174076*^9, 3.7591989188453045`*^9}, 
+   3.7591990944592047`*^9, {3.759199331092333*^9, 3.759199341107959*^9}, {
+   3.7593418810799274`*^9, 3.759341911127843*^9}, {3.759341964764537*^9, 
+   3.7593419866196833`*^9}, 3.759342023860719*^9, {3.7602930812921057`*^9, 
+   3.7602931249301004`*^9}},
+ FontFamily->"Calibri",
+ FontSize->12,
+ FontWeight->"Plain",
+ CellID->712446303,ExpressionUUID->"1e7e20b2-a8b7-42f4-a300-6c55cfa3f92a"],
+
+Cell[TextData[StyleBox["when  t=1/60 ",
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{{3.759198925927148*^9, 3.7591989427829485`*^9}, {
+  3.759199096725229*^9, 3.7591991003107758`*^9}, {3.7602930812991037`*^9, 
+  3.7602931209826107`*^9}},
+ FontFamily->"Calibri",
+ FontSize->12,
+ FontWeight->"Plain",
+ CellID->570306,ExpressionUUID->"e029e370-9f95-4621-919a-8ffc7dcc2b46"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"V", "=", 
+   RowBox[{"156", 
+    RowBox[{"Cos", "[", 
+     RowBox[{"120", "\[Pi]", "*", "t"}], "]"}]}]}], 
+  " "}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"V", 
+   RowBox[{"(", 
+    FractionBox["1", "60"], ")"}]}], "=", 
+  RowBox[{"156", "Cos", 
+   RowBox[{"(", 
+    RowBox[{"120", "*", "\[Pi]", "*", 
+     FractionBox["1", "60"]}], ")"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"=", 
+   RowBox[{"156", "Cos", 
+    RowBox[{"(", 
+     RowBox[{"2", "\[Pi]"}], ")"}]}]}], " "}], "\[IndentingNewLine]", 
+ RowBox[{"=", "156"}]}], "Text",
+ CellChangeTimes->{{3.7591989543968287`*^9, 3.7591989568052626`*^9}, {
+   3.759342020226052*^9, 3.7593420548090005`*^9}, 3.7602930813051305`*^9},
+ FontFamily->"Calibri",
+ FontSize->12,
+ FontWeight->"Plain",
+ CellID->346168656,ExpressionUUID->"fd579645-ac0d-446c-aebb-856002446098"],
+
+Cell["\[Therefore]  Conclusion", "Item",
+ CellChangeTimes->{{3.759200087980644*^9, 3.7592000939435005`*^9}, {
+  3.7592001498360987`*^9, 3.7592001880898046`*^9}},
+ FontFamily->"Calibri",
+ FontSize->12,
+ CellID->176759146,ExpressionUUID->"c8b161fa-233e-4c26-9f26-bf99ae886f7e"],
+
+Cell[TextData[{
+ "\n \[Therefore] ",
+ StyleBox["Therefore the maximum value is 156 ",
+  FontSize->16],
+ "\n  "
+}], "Text",
+ CellChangeTimes->{{3.7591989890840483`*^9, 3.7591990388844843`*^9}, 
+   3.7591991038842616`*^9, {3.7592001942191*^9, 3.7592001948026495`*^9}, {
+   3.760291469665369*^9, 3.7602914849238977`*^9}},
+ FontFamily->"Calibri",
+ FontSize->12,
+ FontWeight->"Plain",
+ CellID->10406896,ExpressionUUID->"88b66e9e-69e0-4021-bad0-5bcc8b628254"]
+}, Open  ]]
+},
+WindowSize->{1280, 641},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 187, 2, 53, "Subtitle",ExpressionUUID->"6ed74d35-e7b8-45f2-996f-798ba5f9a493",
+ CellID->304022547],
+Cell[770, 26, 423, 8, 29, "Text",ExpressionUUID->"42a170c7-0847-4e3e-8589-3e7df3e22bc9",
+ CellID->921508723],
+Cell[1196, 36, 178, 4, 22, "Subitem",ExpressionUUID->"a4beea37-4d0d-4826-8ee4-8289be176b5d",
+ CellID->130563118],
+Cell[1377, 42, 1659, 54, 174, "Text",ExpressionUUID->"57fc99c9-400a-412a-bf60-3b60e49110f6",
+ CellID->291279506],
+Cell[3039, 98, 172, 4, 26, "Item",ExpressionUUID->"6e81ed79-27ad-4ede-be0f-baa7eafd49aa",
+ CellID->10475937],
+Cell[3214, 104, 1225, 42, 105, "Text",ExpressionUUID->"588e35f8-0969-4e37-adb0-131a5dc12eb4",
+ CellID->962948640],
+Cell[4442, 148, 174, 4, 26, "Item",ExpressionUUID->"95101857-a6c9-4217-a8f2-ec762efeda21",
+ CellID->20284225],
+Cell[4619, 154, 304, 6, 27, "Input",ExpressionUUID->"4f9b70da-adc3-4aaf-936c-38dab2d70dfe",
+ CellID->340097547],
+Cell[4926, 162, 1589, 52, 212, "Text",ExpressionUUID->"b262179c-6d0c-4d76-bfa2-0463bcad8320",
+ CellID->372225],
+Cell[6518, 216, 526, 12, 80, "Text",ExpressionUUID->"7b1090d5-39eb-4857-bdb5-81ea9aa20c93",
+ CellID->769773754],
+Cell[7047, 230, 1315, 41, 141, "Text",ExpressionUUID->"1e7e20b2-a8b7-42f4-a300-6c55cfa3f92a",
+ CellID->712446303],
+Cell[8365, 273, 375, 8, 29, "Text",ExpressionUUID->"e029e370-9f95-4621-919a-8ffc7dcc2b46",
+ CellID->570306],
+Cell[8743, 283, 864, 26, 102, "Text",ExpressionUUID->"fd579645-ac0d-446c-aebb-856002446098",
+ CellID->346168656],
+Cell[9610, 311, 275, 5, 26, "Item",ExpressionUUID->"c8b161fa-233e-4c26-9f26-bf99ae886f7e",
+ CellID->176759146],
+Cell[9888, 318, 453, 12, 68, "Text",ExpressionUUID->"88b66e9e-69e0-4021-bad0-5bcc8b628254",
+ CellID->10406896]
+}, Open  ]]
+}
+]
+*)
+
